@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-    <style name="CMActions" parent="@style/PreferenceThemeOverlay.v14.Material">
+    <style name="CMActions" parent="@android:style/Theme.Material.Settings">
         <item name="preferenceTheme">@android:style/Theme.Material.Settings</item>
         <item name="switchBarTheme">@style/ThemeOverlay.SwitchBar.Settings</item>
         <item name="android:colorSecondary">@color/secondary_device_default_settings</item>
