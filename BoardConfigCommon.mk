@@ -43,6 +43,21 @@ TARGET_USE_SDCLANG := true
 LOCAL_SDCLANG := true
 SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
 
+# Use UBERTC
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9-uber/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+ANDROID_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9-uber/bin
+ANDROID_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+TARGET_GCC_VERSION_EXP := 4.9-uber
+
+# Optimization
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := false
+USE_PIPE := true
+
 # Kernel
 BOARD_DTBTOOL_ARGS := --force-v2
 BOARD_KERNEL_BASE := 0x00000000
