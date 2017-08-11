@@ -38,18 +38,6 @@ TARGET_CPU_VARIANT := krait
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 TARGET_NO_BOOTLOADER := true
 
-# Use Snapdragon LLVM, if available
-TARGET_USE_SDCLANG := true
-LOCAL_SDCLANG := true
-SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
-
-# Use UBERTC
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9-uber/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
-ANDROID_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9-uber/bin
-ANDROID_TOOLCHAIN_PREFIX := arm-linux-androideabi-
-TARGET_GCC_VERSION_EXP := 4.9-uber
-
 # Optimization
 CLANG_O3 := true
 STRICT_ALIASING := false
