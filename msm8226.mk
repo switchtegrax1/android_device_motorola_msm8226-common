@@ -99,7 +99,9 @@ PRODUCT_PACKAGES += \
     camera.msm8226 \
     libxml2 \
     libshims_camera \
-    libshims_sensorlistener
+    libshim_qcopt \
+    libshims_sensorlistener \
+    Snap
 
 # DRM
 PRODUCT_PACKAGES += \
