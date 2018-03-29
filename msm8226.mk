@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
     libshims_camera \
     libshim_qcopt \
     libshims_sensorlistener \
-    Snap
+    Camera2
 
 # Dalvik properties
 PRODUCT_PROPERTY_OVERRIDES += \
