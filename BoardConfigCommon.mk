@@ -52,6 +52,13 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 LZMA_RAMDISK_TARGETS := recovery
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8226
 
+
+ifeq ($(WITH_LINARO),true)
+  KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linaro-7.x/bin
+  KERNEL_TOOLCHAIN_PREFIX := arm-linux-gnueabi-
+endif
+
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-smd"
 
