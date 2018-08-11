@@ -1,4 +1,9 @@
 
+# Enable ADB
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+
 # Art
 dalvik.vm.dex2oat-flags=--no-watch-dog
 

@@ -20,8 +20,8 @@ $(call inherit-product, vendor/motorola/msm8226-common/msm8226-common-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
+#    $(LOCAL_PATH)/overlay-lineage
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
     libshims_camera \
     libshim_qcopt \
     libshims_sensorlistener \
-    Snap
+    Camera2
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hdrhax:system/vendor/etc/hdrhax
@@ -119,8 +119,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapmaxfree=8m
 
 # DeviceSettings
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#PRODUCT_PACKAGES += \
+#    DeviceSettings
 
 # DRM
 PRODUCT_PACKAGES += \
