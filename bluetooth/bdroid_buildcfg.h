@@ -25,4 +25,5 @@
 #define MAX_L2CAP_CHANNELS    16
 // skips conn update at conn completion
 #define BTA_BLE_SKIP_CONN_UPD  FALSE
+#undef PROPERTY_VALUE_MAX
 #endif
