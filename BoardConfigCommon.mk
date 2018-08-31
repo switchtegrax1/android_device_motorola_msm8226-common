@@ -74,6 +74,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_USES_MEDIA_EXTENSIONS := true
 TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
 
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+	/system/vendor/bin/mm-qcamera-daemon=23
+
 # Charger
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/mmi_lpm/lpm_mode
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
