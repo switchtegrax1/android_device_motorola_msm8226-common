@@ -46,7 +46,7 @@ persist.hwc.mdpcomp.enable=true
 ro.opengles.version=196608
 ro.sf.lcd_density=320
 sys.use_fifo_ui=1
-debug.hwui.renderer=opengl
+debug.hwui.renderer=opengl-test
 
 # GPS
 ro.gps.agps_provider=1
